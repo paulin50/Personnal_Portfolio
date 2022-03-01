@@ -24,6 +24,7 @@ export default function ContactMe(props) {
   const [message, setMessage] = useState("");
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -45,14 +46,16 @@ export default function ContactMe(props) {
       };
       setBool(true);
       const res = await axios.post(`/contact`, data);
-      if (name.length === 0 || email.length === 0 || message.length === 0) {
+      if (name.length === 0 || email.length === 0 || message.length === 0 || email.indexOf('@')==-1) {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
+        setError(true);
       } else if (res.status === 200) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
         setBool(false);
+        setError(false);
 
         setName("");
         setEmail("");
@@ -93,7 +96,13 @@ export default function ContactMe(props) {
             <img src={imgBack} alt="image not found" />
           </div>
           <form onSubmit={submitForm}>
-            <p>{banner}</p>
+            <p className={
+              error ? (
+                "error"
+              ) : (
+                "success"
+              )
+            }>{banner}</p>
             <label htmlFor="name">Name</label>
             <input type="text" name="name" onChange={handleName} value={name} />
 

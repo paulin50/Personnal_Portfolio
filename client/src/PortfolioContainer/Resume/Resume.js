@@ -185,7 +185,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know in mathematics and Software Development simply because i believe in sharing."
       />
       <ResumeHeading
         heading="Music"

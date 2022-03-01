@@ -124,6 +124,12 @@ button .load {
   width: 100%;
 }
 
+
+
+.success {
+  color: green;
+}
+
 button .load img {
   width: 60px;
   color: green;
