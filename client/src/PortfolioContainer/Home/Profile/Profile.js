@@ -9,19 +9,19 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="cols-icon">
-              <a href="https://web.facebook.com/?_rdc=1&_rdr">
+              <a href="https://facebook.com/paulin.winston.756/">
                 <i className="fa fa-facebook-square" />
               </a>
               <a href="#">
                 <i className="fa fa-google-plus-square" />
               </a>
-              <a href="https://www.instagram.com/instructor_ehizeex/">
+              <a href="https://instagram.com/paulin_winston/saved/">
                 <i className="fa fa-instagram" />
               </a>
-              <a href="https://www.youtube.com/channel/UCSSr5ZDFbilpZ592_ycoAwA">
+              <a href="#">
                 <i className="fa fa-youtube-square" />
               </a>
-              <a href="https://twitter.com/Ehiedu_baba">
+              <a href="#">
                 <i className="fa fa-twitter" />
               </a>
             </div>
@@ -29,7 +29,7 @@ export default function Profile() {
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hello, I'M <span className="highlighted-text">Ehiedu</span>
+              Hello, I'M <span className="highlighted-text">Paulin</span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -39,11 +39,11 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Ethusiastic Dev 😎",
+                    "Backend Dev 😎",
                     1000,
                     "Full stack Developer 💻",
                     1000,
-                    "Mern stck Dev 📱",
+                    "Mern stack Dev 📱",
                     1000,
                     "Cross Platform Dev 🔴",
                     1000,
@@ -54,13 +54,13 @@ export default function Profile() {
               </h1>
             </span>
             <span className="profile-role-tagline">
-              Knack of building applications with front and back end operations.
+              JavaScript and Python Full Stack Developper base in Lome.
             </span>
           </div>
 
           <div className="profile-options">
             <button className="btn primary-btn"> Hire Me </button>
-            <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
+            <a href="Paulin.pdf" download="Paulin K_resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>

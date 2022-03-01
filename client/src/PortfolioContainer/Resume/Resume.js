@@ -56,9 +56,9 @@ const Resume = (props) => {
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
     { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
+    { skill: "Python", ratingPercentage: 89 },
     { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
+    { skill: "Php", ratingPercentage: 70 },
     { skill: "Core Java", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
@@ -73,12 +73,12 @@ const Resume = (props) => {
       subHeading: "Technologies Used: React JS, Bootsrap",
     },
     {
-      title: "Mobile E-shop ",
+      title: "Galaxy Game ",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+        "A Galaxy Game which can run on any screen",
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Technologies Used:  Python, Kivy(Python module).",
     },
     {
       title: "Ecommerce Website ",
@@ -93,23 +93,23 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"University of Lome, Togo"}
+        subHeading={"BACHELOR OF Fundamental Mathematics"}
+        fromDate={"2018"}
+        toDate={"2022"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
+        heading={"Tam-Tam Digital School"}
+        subHeading={"Software Development and User Interface"}
         fromDate={"2019"}
-        toDate={"2020"}
+        toDate={"2021"}
       />
       <ResumeHeading
         heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        subHeading={"Lycee Kekey"}
+        fromDate={"2015"}
+        toDate={"2018"}
       />
     </div>,
 
@@ -117,20 +117,20 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
+          heading={"TamTam Digital School"}
           subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
+          fromDate={"2020"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            Currently working as Software developer at TamTam Digital School.
+            
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
+            - Customize an ecommerce website using wordpress and Php for client with the dashboard for
             managing the products, managing reviews, users, payment etc. .
           </span>
           <br />
