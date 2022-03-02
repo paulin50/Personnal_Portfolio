@@ -68,7 +68,7 @@ const contactRoute = (req,res) => {
               });
               
 
-            }
+            }  
 
 module.exports = contactRoute;
 

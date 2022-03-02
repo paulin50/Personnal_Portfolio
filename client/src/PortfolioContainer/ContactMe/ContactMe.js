@@ -46,7 +46,7 @@ export default function ContactMe(props) {
       };
       setBool(true);
       const res = await axios.post(`/contact`, data);
-      if (name.length === 0 || email.length === 0 || message.length === 0 || email.indexOf('@')==-1) {
+      if (name.length == 0 || email.length == 0 || message.length == 0 || email.indexOf('@')==-1) {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
