@@ -63,11 +63,11 @@ const contactRoute = (req,res) => {
                     res.json(data)
                     } else {
                     console.log('Email sent: ' + info.response);
+                    
                     res.json(data);
                     }
               });
               
-
             }  
 
 module.exports = contactRoute;

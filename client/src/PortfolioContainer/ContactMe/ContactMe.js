@@ -51,7 +51,7 @@ export default function ContactMe(props) {
         toast.error(res.data.msg);
         setBool(false);
         setError(true);
-      } else if (res.status === 200) {
+      } else if (res.status == 200) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
         setBool(false);
