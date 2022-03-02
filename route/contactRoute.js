@@ -14,9 +14,9 @@ const contactRoute = (req,res) => {
             email = req.body.email;
             name = req.body.name;
             message = req.body.message;
-            console.log(email);
-            console.log(name);
-            console.log(message);
+            //console.log(email);
+            //console.log(name);
+            //console.log(message);
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
