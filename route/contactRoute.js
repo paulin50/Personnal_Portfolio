@@ -36,11 +36,11 @@ const contactRoute = (req,res) => {
                 msg : "Thank you for contacting me"
             }
               
-            if(name.length === 0){
+            if(name.length == 0){
               data.msg = "Empty name"
               res.json(data)
             }
-            if(email.length === 0){
+            if(email.length == 0){
               data.msg = "Email is empty"
               res.json(data)
             }
@@ -51,7 +51,7 @@ const contactRoute = (req,res) => {
             }
 
 
-            if(message.length === 0){
+            if(message.length == 0){
               data.msg = "Empty Message"
               res.json(data)
             }
