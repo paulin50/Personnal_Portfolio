@@ -63,7 +63,7 @@ const contactRoute = (req,res) => {
                     res.json(data)
                     } else {
                     console.log('Email sent: ' + info.response);
-                    data.msg = "Thank you for contacting me"
+                    // data.msg = "Thank you for contacting me"
                     res.json(data);
                     }
               });
