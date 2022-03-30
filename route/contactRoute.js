@@ -12,11 +12,11 @@ var nodemailer = require('nodemailer');
 
 const contactRoute = (req,res) => {
             email = req.body.email;
-            name = req.body.name;
+            names = req.body.name;
             message = req.body.message;
-            console.log(email);
-            console.log(name);
-            console.log(message);
+            //console.log(email);
+            //console.log(names);
+            //console.log(message);
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
@@ -29,14 +29,14 @@ const contactRoute = (req,res) => {
                 from: email,
                 to: 'paulinkladi@gmail.com',
                 subject: 'Portfolio Contact',
-                text: name + "\n" + message
+                text: names + "\n" + message
               };
 
               var data = {
                 msg : "Thank you for contacting me"
             }
               
-            if(name.length === 0){
+            if(names.length === 0){
               data.msg = "Empty name"
               res.json(data)
             }
