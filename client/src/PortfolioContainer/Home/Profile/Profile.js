@@ -41,7 +41,7 @@ export default function Profile() {
                   steps={[
                     "Android and IOS 😎",
                     1000,
-                    "Full stack Developer 💻",
+                    "Full stack Developper 💻",
                     1000,
                     "Mern stack Dev 📱",
                     1000,
@@ -54,7 +54,7 @@ export default function Profile() {
               </h1>
             </span>
             <span className="profile-role-tagline">
-              JavaScript and Python Full Stack Developper base in Lome.
+              JavaScript and Python Full Stack Developper base in Togo.
             </span>
           </div>
 

@@ -54,10 +54,10 @@ const Resume = (props) => {
   //here we have
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
+    { skill: "React Js", ratingPercentage: 85 },
     { skill: "React Native", ratingPercentage: 85 },
     { skill: "Python", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
+    { skill: "Node Js", ratingPercentage: 89 },
     { skill: "Php", ratingPercentage: 70 },
     { skill: "Core Java", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
@@ -86,14 +86,14 @@ const Resume = (props) => {
       description:
         "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used: Mongo DB, Epress Js, React Js, Node Js, Redux, Bootstrap.",
     },
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Lome, Togo"}
+        heading={"University of Lomé, Togo"}
         subHeading={"BACHELOR OF Fundamental Mathematics"}
         fromDate={"2018"}
         toDate={"2022"}
