@@ -11,8 +11,8 @@ var nodemailer = require('nodemailer');
 
 
 const contactRoute = (req,res) => {
-            email = req.body.email;
-            names = req.body.name;
+            email = req.body.email || '';
+            name = req.body.name;
             message = req.body.message;
             //console.log(email);
             //console.log(names);
@@ -29,18 +29,18 @@ const contactRoute = (req,res) => {
                 from: email,
                 to: 'paulinkladi@gmail.com',
                 subject: 'Portfolio Contact',
-                text: names + "\n" + message
+                text: name + "\n" + message
               };
 
               var data = {
                 msg : "Thank you for contacting me"
             }
               
-            if(names.length === 0){
+            if(name.length == 0){
               data.msg = "Empty name"
               res.json(data)
             }
-            if(email.length === 0){
+            if(email.length == 0){
               data.msg = "Email is empty"
               res.json(data)
             }
@@ -50,8 +50,7 @@ const contactRoute = (req,res) => {
               res.json(data)
             }
 
-
-            if(message.length === 0){
+            if(message.length == 0){
               data.msg = "Empty Message"
               res.json(data)
             }
@@ -67,9 +66,7 @@ const contactRoute = (req,res) => {
                     }
               });
               
-
             }  
-
 module.exports = contactRoute;
 
 
