@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/", contactRoute);
+app.use("/contact", contactRoute);
 
 if (process.env.NODE_ENV === "production") {  
   app.use(express.static("client/build"));
