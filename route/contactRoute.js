@@ -12,10 +12,10 @@ var nodemailer = require('nodemailer');
 
 const contactRoute = (req,res) => {
             email = req.body.email || '';
-            name = req.body.name;
-            message = req.body.message;
-            //console.log(email);
-            //console.log(names);
+            name = req.body.name || '';
+            message = req.body.message || '';
+            console.log(email) ;
+            //console.log(name);
             //console.log(message);
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
@@ -26,10 +26,10 @@ const contactRoute = (req,res) => {
               });
 
               var mailOptions = {
-                from: email,
+                from: '“Sender Name” juleswinston978@gmail.com',
                 to: 'paulinkladi@gmail.com',
                 subject: 'Portfolio Contact',
-                text: name + "\n" + message
+                text: email + "\n" + name + "\n" + message
               };
 
               var data = {
